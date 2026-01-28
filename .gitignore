@@ -1,0 +1,16 @@
+# Hugo default output
+public/
+resources/_gen/
+hugo_stats.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Build and temporary files
+*.log
+tmp/

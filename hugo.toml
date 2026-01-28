@@ -1,0 +1,13 @@
+baseURL = 'https://improneuf.no/'
+title = 'Impro Neuf'
+theme = 'improneuf'
+
+[languages]
+  [languages.no]
+    languageName = 'Norsk'
+    weight = 1
+    contentDir = 'content/no'
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+    contentDir = 'content/en'
