@@ -1,15 +1,27 @@
 <header>
     <div class="container">
         <nav>
-            <a href="{{ "/" | absURL }}" class="logo">
-                <img src="{{ "images/logo.png" | absURL }}" alt="Impro Neuf Logo"
+            <a href="{{ " /" | absURL }}" class="logo">
+                <img src="{{ " images/logo.png" | absURL }}" alt="Impro Neuf Logo"
                     style="display: block; max-height: 60px;">
             </a>
             <div class="nav-links">
-                <a href="{{ .Site.BaseURL }}" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Shows</a>
-                <a href="#" class="nav-link">Workshops</a>
-                <a href="#" class="nav-link">About</a>
+                {{ range .Site.Menus.main }}
+                <div class="nav-item{{ if .HasChildren }} has-dropdown{{ end }}">
+                    <a href="{{ .URL | relLangURL }}" class="nav-link">
+                        {{ .Name }}
+                        {{ if .HasChildren }}<span class="dropdown-arrow">▾</span>{{ end }}
+                    </a>
+                    {{ if .HasChildren }}
+                    <div class="dropdown-menu">
+                        {{ range .Children }}
+                        <a href="{{ .URL | relLangURL }}" class="dropdown-link">{{ .Name }}</a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+
                 <div class="language-switch">
                     {{ range .Translations }}
                     <a href="{{ .Permalink }}" class="nav-link">{{ .Language.LanguageName }}</a>

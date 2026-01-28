@@ -1,13 +1,144 @@
 baseURL = 'https://improneuf.no/'
 title = 'Impro Neuf'
 theme = 'improneuf'
+defaultContentLanguage = 'no'
+defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.no]
+    languageCode = 'nb-NO'
     languageName = 'Norsk'
     weight = 1
     contentDir = 'content/no'
+
+    [[languages.no.menu.main]]
+        name = "Hjem"
+        url = "/"
+        weight = 10
+
+    [[languages.no.menu.main]]
+        name = "Forestillinger"
+        url = "/#shows"
+        weight = 20
+
+    [[languages.no.menu.main]]
+        name = "Workshops"
+        url = "/#workshops"
+        weight = 30
+
+    [[languages.no.menu.main]]
+        name = "Om oss"
+        url = "/about/"
+        identifier = "about"
+        weight = 40
+
+    [[languages.no.menu.main]]
+        name = "Historie"
+        parent = "about"
+        url = "/about/historie/"
+        weight = 10
+
+    [[languages.no.menu.main]]
+        name = "Offentlige regnskaper"
+        parent = "about"
+        url = "/about/offentlige-regnskaper/"
+        weight = 20
+
+    [[languages.no.menu.main]]
+        name = "Roller"
+        parent = "about"
+        url = "/about/roller/"
+        weight = 30
+
+    [[languages.no.menu.main]]
+        name = "Lærere / frivillige"
+        parent = "about"
+        url = "/about/laerere-frivillige/"
+        weight = 40
+
+    [[languages.no.menu.main]]
+        name = "Team"
+        parent = "about"
+        url = "/about/team/"
+        weight = 50
+
+    [[languages.no.menu.main]]
+        name = "Hvor"
+        parent = "about"
+        url = "/about/hvor/"
+        weight = 60
+
+    [[languages.no.menu.main]]
+        name = "Hvem"
+        parent = "about"
+        url = "/about/hvem/"
+        weight = 70
+
   [languages.en]
+    languageCode = 'en-US'
     languageName = 'English'
     weight = 2
     contentDir = 'content/en'
+
+    [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 10
+
+    [[languages.en.menu.main]]
+        name = "Shows"
+        url = "/#shows"
+        weight = 20
+
+    [[languages.en.menu.main]]
+        name = "Workshops"
+        url = "/#workshops"
+        weight = 30
+
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "/about/"
+        identifier = "about"
+        weight = 40
+
+    [[languages.en.menu.main]]
+        name = "History"
+        parent = "about"
+        url = "/about/history/"
+        weight = 10
+
+    [[languages.en.menu.main]]
+        name = "Public records"
+        parent = "about"
+        url = "/about/public-records/"
+        weight = 20
+
+    [[languages.en.menu.main]]
+        name = "Roles"
+        parent = "about"
+        url = "/about/roles/"
+        weight = 30
+
+    [[languages.en.menu.main]]
+        name = "Teachers / volunteers"
+        parent = "about"
+        url = "/about/teachers-volunteers/"
+        weight = 40
+
+    [[languages.en.menu.main]]
+        name = "Teams"
+        parent = "about"
+        url = "/about/teams/"
+        weight = 50
+
+    [[languages.en.menu.main]]
+        name = "Where"
+        parent = "about"
+        url = "/about/where/"
+        weight = 60
+
+    [[languages.en.menu.main]]
+        name = "Who"
+        parent = "about"
+        url = "/about/who/"
+        weight = 70
