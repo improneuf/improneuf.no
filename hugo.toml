@@ -3,8 +3,6 @@ title = 'Impro Neuf'
 theme = 'improneuf'
 defaultContentLanguage = 'no'
 defaultContentLanguageInSubdir = false
-relativeURLs = true
-canonifyURLs = false
 
 [languages]
   [languages.no]
@@ -84,63 +82,63 @@ canonifyURLs = false
 
     [[languages.en.menu.main]]
         name = "Home"
-        url = "/"
+        url = "/en/"
         weight = 10
 
     [[languages.en.menu.main]]
         name = "Shows"
-        url = "/#shows"
+        url = "/en/#shows"
         weight = 20
 
     [[languages.en.menu.main]]
         name = "Workshops"
-        url = "/#workshops"
+        url = "/en/#workshops"
         weight = 30
 
     [[languages.en.menu.main]]
         name = "About"
-        url = "/about/"
+        url = "/en/about/"
         identifier = "about"
         weight = 40
 
     [[languages.en.menu.main]]
         name = "History"
         parent = "about"
-        url = "/about/history/"
+        url = "/en/about/history/"
         weight = 10
 
     [[languages.en.menu.main]]
         name = "Public records"
         parent = "about"
-        url = "/about/public-records/"
+        url = "/en/about/public-records/"
         weight = 20
 
     [[languages.en.menu.main]]
         name = "Roles"
         parent = "about"
-        url = "/about/roles/"
+        url = "/en/about/roles/"
         weight = 30
 
     [[languages.en.menu.main]]
         name = "Teachers / volunteers"
         parent = "about"
-        url = "/about/teachers-volunteers/"
+        url = "/en/about/teachers-volunteers/"
         weight = 40
 
     [[languages.en.menu.main]]
         name = "Teams"
         parent = "about"
-        url = "/about/teams/"
+        url = "/en/about/teams/"
         weight = 50
 
     [[languages.en.menu.main]]
         name = "Where"
         parent = "about"
-        url = "/about/where/"
+        url = "/en/about/where/"
         weight = 60
 
     [[languages.en.menu.main]]
         name = "Who"
         parent = "about"
-        url = "/about/who/"
+        url = "/en/about/who/"
         weight = 70

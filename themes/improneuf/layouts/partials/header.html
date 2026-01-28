@@ -1,21 +1,21 @@
 <header>
     <div class="container">
         <nav>
-            <a href="{{ site.Home.RelPermalink }}" class="logo">
+            <a href="{{ site.Home.Permalink }}" class="logo">
                 <img src="{{ " images/logo.png" | absURL }}" alt="Impro Neuf Logo"
                     style="display: block; max-height: 60px;">
             </a>
             <div class="nav-links">
                 {{ range .Site.Menus.main }}
                 <div class="nav-item{{ if .HasChildren }} has-dropdown{{ end }}">
-                    <a href="{{ .URL | relLangURL }}" class="nav-link">
+                    <a href="{{ .URL | absURL }}" class="nav-link">
                         {{ .Name }}
                         {{ if .HasChildren }} <span class="dropdown-arrow">▾</span>{{ end }}
                     </a>
                     {{ if .HasChildren }}
                     <div class="dropdown-menu">
                         {{ range .Children }}
-                        <a href="{{ .URL | relLangURL }}" class="dropdown-link">{{ .Name }}</a>
+                        <a href="{{ .URL | absURL }}" class="dropdown-link">{{ .Name }}</a>
                         {{ end }}
                     </div>
                     {{ end }}
