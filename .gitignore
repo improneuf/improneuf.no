@@ -1,5 +1,6 @@
 # Hugo default output
 public/
+public_test*
 resources/_gen/
 hugo_stats.json
 
