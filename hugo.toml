@@ -1,4 +1,4 @@
-baseURL = 'https://improneuf.no/'
+baseURL = 'https://improneuf.github.io/improneuf.no/'
 title = 'Impro Neuf'
 theme = 'improneuf'
 defaultContentLanguage = 'no'
