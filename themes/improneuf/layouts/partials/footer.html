@@ -3,25 +3,25 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Impro Neuf</h3>
-                <p>Oslo's biggest and most inclusive improv community.</p>
-                <p>Based at Chateau Neuf.</p>
+                <p>{{ i18n "footer_community_desc" }}</p>
+                <p>{{ i18n "footer_based_at" }}</p>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3>{{ i18n "footer_quick_links" }}</h3>
                 <ul>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="#">Workshops</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">{{ i18n "footer_shows" }}</a></li>
+                    <li><a href="#">{{ i18n "footer_workshops" }}</a></li>
+                    <li><a href="#">{{ i18n "footer_about_us" }}</a></li>
+                    <li><a href="#">{{ i18n "footer_contact" }}</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Stay Spontaneous</h3>
-                <p>Follow us on social media for the latest updates on shows and workshops.</p>
+                <h3>{{ i18n "footer_stay_spontaneous" }}</h3>
+                <p>{{ i18n "footer_social_text" }}</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; {{ now.Format "2006" }} Impro Neuf. Built with ❤️ and spontaneity.</p>
+            <p>&copy; {{ now.Format "2006" }} {{ i18n "footer_built_with" }}</p>
         </div>
     </div>
 </footer>
