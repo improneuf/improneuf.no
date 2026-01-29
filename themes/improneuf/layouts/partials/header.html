@@ -2,7 +2,7 @@
     <div class="container">
         <nav>
             <a href="{{ site.Home.Permalink }}" class="logo">
-                <img src="{{ "images/logo.png" | absURL }}" alt="Impro Neuf Logo"
+                <img src="{{ " images/logo.png" | absURL }}" alt="Impro Neuf Logo"
                     style="display: block; max-height: 60px;">
             </a>
             <div class="nav-links">
@@ -24,7 +24,9 @@
 
                 <div class="language-switch">
                     {{ range .Translations }}
-                    <a href="{{ .Permalink }}" class="nav-link">{{ .Language.LanguageName }}</a>
+                    <a href="{{ .Permalink }}" class="nav-link"
+                        onclick="document.cookie='improneuf_language={{ .Language.Lang }}; path=/; max-age=31536000'">{{
+                        .Language.LanguageName }}</a>
                     {{ end }}
                 </div>
             </div>

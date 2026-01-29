@@ -10,7 +10,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{{ "images/logo.png" | absURL }}">
+    <link rel="icon" type="image/png" href="{{ " images/logo.png" | absURL }}">
+
+    <script>
+        (function () {
+            try {
+                const cookieName = 'improneuf_language';
+                const cookieMatch = document.cookie.match(new RegExp('(^| )' + cookieName + '=([^;]+)'));
+                const savedLang = cookieMatch ? cookieMatch[2] : null;
+                const currentLang = "{{ .Site.Language.Lang }}";
+                let desiredLang = savedLang;
+
+                if (!desiredLang) {
+                    const browserLangs = navigator.languages || [navigator.language];
+                    const isNorwegian = browserLangs.some(l => /^(no|nb|nn)/i.test(l));
+                    desiredLang = isNorwegian ? 'no' : 'en';
+                }
+
+                if (desiredLang !== currentLang) {
+                    { { range.Translations } }
+                    if ("{{ .Language.Lang }}" === desiredLang) {
+                        window.location.href = "{{ .Permalink }}";
+                    }
+                    { { end } }
+                }
+            } catch (e) {
+                console.error("Language redirect error:", e);
+            }
+        })();
+    </script>
 </head>
 
 <body>
