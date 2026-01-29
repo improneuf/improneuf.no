@@ -28,11 +28,17 @@
                 }
 
                 if (desiredLang !== currentLang) {
-                    { { range.Translations } }
-                    if ("{{ .Language.Lang }}" === desiredLang) {
-                        window.location.href = "{{ .Permalink }}";
+                    // Generate a list of available translations for this page
+                    const translations = [
+                        {{ range .Translations }}
+                        { lang: "{{ .Language.Lang }}", url: "{{ .Permalink }}" },
+                        {{ end }}
+                    ];
+                    
+                    const target = translations.find(t => t.lang === desiredLang);
+                    if (target) {
+                        window.location.href = target.url;
                     }
-                    { { end } }
                 }
             } catch (e) {
                 console.error("Language redirect error:", e);
