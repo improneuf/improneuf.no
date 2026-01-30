@@ -41,7 +41,7 @@ defaultContentLanguageInSubdir = false
     [[languages.no.menu.main]]
         name = "Offentlige regnskaper"
         parent = "about"
-        url = "/about/offentlige-regnskaper/"
+        url = "https://drive.google.com/drive/folders/1r7ZnV6gpdHxkjha2z8BG5Nvs3qWahIPz"
         weight = 20
 
     [[languages.no.menu.main]]
@@ -140,7 +140,7 @@ defaultContentLanguageInSubdir = false
     [[languages.en.menu.main]]
         name = "Public records"
         parent = "about"
-        url = "/en/about/public-records/"
+        url = "https://drive.google.com/drive/folders/1r7ZnV6gpdHxkjha2z8BG5Nvs3qWahIPz"
         weight = 20
 
     [[languages.en.menu.main]]
