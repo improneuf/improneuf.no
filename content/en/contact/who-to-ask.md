@@ -2,6 +2,7 @@
 title: "Who do I ask about stuff?"
 date: 2026-01-30
 draft: false
+translationKey: "contact-who-to-ask"
 ---
 
 ## ENGLISH
