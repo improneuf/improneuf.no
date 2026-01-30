@@ -83,25 +83,25 @@ defaultContentLanguageInSubdir = false
     [[languages.no.menu.main]]
         name = "Anonym tilbakemelding"
         parent = "contact"
-        url = "/contact/anonymous-feedback/"
+        url = "/contact/anonym-tilbakemelding/"
         weight = 10
 
     [[languages.no.menu.main]]
         name = "Rapport/varsel"
         parent = "contact"
-        url = "/contact/report-notification/"
+        url = "/contact/rapport-varsel/"
         weight = 20
 
     [[languages.no.menu.main]]
         name = "Kontakt styret"
         parent = "contact"
-        url = "/contact/contact-board/"
+        url = "/contact/kontakt-styret/"
         weight = 30
 
     [[languages.no.menu.main]]
         name = "Hvem spør jeg om ting?"
         parent = "contact"
-        url = "/contact/who-to-ask/"
+        url = "/contact/hvem-spor-jeg/"
         weight = 40
 
   [languages.en]

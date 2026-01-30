@@ -1,38 +1,38 @@
 ---
-title: "Who do I ask about stuff?"
+title: "Hvem spør jeg om ting?"
 date: 2026-01-30
 draft: false
 ---
 
-# Who do I ask about stuff?
+# Hvem spør jeg om ting?
 
-## ENGLISH
+## Engelsk
 
-**English members workshop**  
+**Engelsk medlemsworkshop**  
 Nikki Michelle Soo
 
-**English open workshop**  
+**Engelsk åpen workshop**  
 Rémi Rossi
 
-**The new English mixer team**  
+**Det nye engelske mixer teamet**  
 Peter Müller
 
-**The Impro Neuf Shortform pool and Jams**  
+**Impro Neuf Shortform pool og Jams**  
 Carlos Moreno
 
-**Musical Impro Workshops**  
-India Anderson, Alejandro Saksida and Annika Harrestad
+**Musikalsk Impro Workshops**  
+India Anderson, Alejandro Saksida og Annika Harrestad
 
 **Oslo Impro Festival**  
 Invi Brenna
 
-**Finance**  
+**Økonomi**  
 Miklós Altorjay
 
-**Website**  
+**Nettside**  
 Aleksander Andersen
 
-## NORSK
+## Norsk
 
 **Norsk medlemsworkshop**  
 Martine Amsrud Dietz
@@ -43,14 +43,14 @@ Thomas Haraldsen Evang og Paul Omar Lervåg
 **Det nye norske mixer teamet**  
 Paul Omar Lervåg
 
-**Shows both English og Norske**  
+**Forestillinger både engelske og norske**  
 Eva Steffensen
 
-**Booking-meetings and rooms**  
+**Booking-møter og rom**  
 Eva Steffensen
 
 **PR**  
 Ruidi Collins
 
-**Election comitee (if you want to be on the next board)**  
+**Valgkomité (hvis du vil være med i neste styre)**  
 Eva Coder Steffensen, Anjitha S.g., Magnus Seines
