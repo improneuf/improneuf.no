@@ -4,8 +4,6 @@ date: 2026-01-30
 draft: false
 ---
 
-# Hvem spør jeg om ting?
-
 ## Engelsk
 
 **Engelsk medlemsworkshop**  

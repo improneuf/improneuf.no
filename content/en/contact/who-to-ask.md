@@ -4,8 +4,6 @@ date: 2026-01-30
 draft: false
 ---
 
-# Who do I ask about stuff?
-
 ## ENGLISH
 
 **English members workshop**  

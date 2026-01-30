@@ -4,6 +4,4 @@ date: 2026-01-30
 draft: false
 ---
 
-# Contact Us
-
 Welcome to our contact page. Here you can find various ways to get in touch with us.
