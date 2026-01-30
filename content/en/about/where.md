@@ -10,10 +10,10 @@ Most of our events take place at Chateu Neuf, Slemdalsveien 15, 0369 Oslo
 
 # How to find the different rooms at Chateu Neuf
 
-How to find Betong: https://photos.google.com/share/AF1QipPQ7K0QFR8PIB0M4kI_8QK_MC2gYXxCzxeLmPRIzUVDZSb3VfgiuhzgrlGz6CCqsg/photo/AF1QipP-JBbqDF6WSENoLHTHGEs-GyphfNfmKHzOVUnw?key=clFkWU42VnlYUjZySVhxb3ktTWZzZnVZSUVrQUVB
+How to find Betong: https://photos.app.goo.gl/aRshY5wqGMjxKC5R6
 
-How to find Klubbscenen: https://photos.google.com/share/AF1QipNl5i6PdI0t8_b_EXtjpnpPYbdz7WvenXWj6hZ_PWmF8KpEhWrSdhxs0H99IaYMHg/photo/AF1QipPg-Wdq5of8aGNUqj7CHjc76QJqrgoHPEI1_vLE?key=MUctSE9vSXBxX2ljclBzWEY3bC1sbUU4VDNtZkpB
+How to find Klubbscenen: https://photos.app.goo.gl/xiDvprrcszdULeeZ6
 
-How to find Teaterscenen: https://photos.google.com/share/AF1QipMkPUAhvLXq1gt36jlYqoKkRqA93BkPVg1_MkbT3VskCA3A-lLGIAe33p6bf11aKw/photo/AF1QipMnB47k2rEjRbn6yGqzRsFmHPiZOI1CvvoE5k2v?key=WGZzMnJoZk5qZ3ROaGFNS1l4V1BMb2xONFQ2X0lR
+How to find Teaterscenen: https://photos.app.goo.gl/ZutnWqpvtSabyFKy6
 
-How to find Lillesalen: https://photos.google.com/share/AF1QipNZQ7zFnLWM-sTOAnydq9ZpbqN6CLaPxzrkLNJi1hykfVXLG17T_7xUAwdH1OmiIA/photo/AF1QipP6dicUWcVpG_xAIQDGVlZAX03rtO9MQK3rWe8s?key=Zm9RWEdKUXVnSEFIVFVNSTZDcWR4NUtFelpUUDNR
+How to find Lillesalen: https://photos.app.goo.gl/tSPTpT55Lp8rLAMc9
