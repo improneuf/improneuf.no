@@ -1,0 +1,9 @@
+---
+title: "Kontakt oss"
+date: 2026-01-30
+draft: false
+---
+
+# Kontakt oss
+
+Velkommen til vår kontaktside. Her finner du ulike måter å komme i kontakt med oss på.

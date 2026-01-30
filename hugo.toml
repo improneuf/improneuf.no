@@ -74,6 +74,36 @@ defaultContentLanguageInSubdir = false
         url = "/about/hvem/"
         weight = 70
 
+    [[languages.no.menu.main]]
+        name = "Kontakt oss"
+        url = "/contact/"
+        identifier = "contact"
+        weight = 50
+
+    [[languages.no.menu.main]]
+        name = "Anonym tilbakemelding"
+        parent = "contact"
+        url = "/contact/anonymous-feedback/"
+        weight = 10
+
+    [[languages.no.menu.main]]
+        name = "Rapport/varsel"
+        parent = "contact"
+        url = "/contact/report-notification/"
+        weight = 20
+
+    [[languages.no.menu.main]]
+        name = "Kontakt styret"
+        parent = "contact"
+        url = "/contact/contact-board/"
+        weight = 30
+
+    [[languages.no.menu.main]]
+        name = "Hvem spør jeg om ting?"
+        parent = "contact"
+        url = "/contact/who-to-ask/"
+        weight = 40
+
   [languages.en]
     languageCode = 'en-US'
     languageName = 'English'
@@ -142,3 +172,33 @@ defaultContentLanguageInSubdir = false
         parent = "about"
         url = "/en/about/who/"
         weight = 70
+
+    [[languages.en.menu.main]]
+        name = "Contact Us"
+        url = "/en/contact/"
+        identifier = "contact"
+        weight = 50
+
+    [[languages.en.menu.main]]
+        name = "Anonymous feedback"
+        parent = "contact"
+        url = "/en/contact/anonymous-feedback/"
+        weight = 10
+
+    [[languages.en.menu.main]]
+        name = "Report/notification"
+        parent = "contact"
+        url = "/en/contact/report-notification/"
+        weight = 20
+
+    [[languages.en.menu.main]]
+        name = "Contact the board"
+        parent = "contact"
+        url = "/en/contact/contact-board/"
+        weight = 30
+
+    [[languages.en.menu.main]]
+        name = "Who do I ask about stuff?"
+        parent = "contact"
+        url = "/en/contact/who-to-ask/"
+        weight = 40
