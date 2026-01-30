@@ -51,12 +51,6 @@ defaultContentLanguageInSubdir = false
         weight = 30
 
     [[languages.no.menu.main]]
-        name = "Lærere / frivillige"
-        parent = "about"
-        url = "/about/laerere-frivillige/"
-        weight = 40
-
-    [[languages.no.menu.main]]
         name = "Team"
         parent = "about"
         url = "/about/team/"
@@ -148,12 +142,6 @@ defaultContentLanguageInSubdir = false
         parent = "about"
         url = "/en/about/roles/"
         weight = 30
-
-    [[languages.en.menu.main]]
-        name = "Teachers / volunteers"
-        parent = "about"
-        url = "/en/about/teachers-volunteers/"
-        weight = 40
 
     [[languages.en.menu.main]]
         name = "Teams"
