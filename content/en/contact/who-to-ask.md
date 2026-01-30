@@ -5,7 +5,7 @@ draft: false
 translationKey: "contact-who-to-ask"
 ---
 
-## ENGLISH
+## English
 
 **English members workshop**  
 [Nikki Michelle Soo](https://facebook.com/nikkimichellesoo)
@@ -31,18 +31,18 @@ translationKey: "contact-who-to-ask"
 **Website**  
 Aleksander Andersen
 
-## NORSK
+## Norwegian
 
-**Norsk medlemsworkshop**  
+**Norwegian members workshop**  
 [Martine Amsrud Dietz](https://facebook.com/martine.amsruddietz)
 
-**Norsk åpen workshop**  
-[Thomas Haraldsen Evang](https://facebook.com/thomas.evang) og [Paul Omar Lervåg](https://facebook.com/Playerkameo)
+**Norwegian open workshop**  
+[Thomas Haraldsen Evang](https://facebook.com/thomas.evang) and [Paul Omar Lervåg](https://facebook.com/Playerkameo)
 
-**Det nye norske mixer teamet**  
+**The new Norwegian mixer team**  
 [Paul Omar Lervåg](https://facebook.com/Playerkameo)
 
-**Shows both English og Norske**  
+**Shows both English and Norwegian**  
 [Eva Steffensen](https://facebook.com/eva.c.steffensen)
 
 **Booking-meetings and rooms**  
@@ -51,5 +51,5 @@ Aleksander Andersen
 **PR**  
 [Ruidi Collins](https://facebook.com/ruidi.collins.1)
 
-**Election comitee (if you want to be on the next board)**  
+**Election committee (if you want to be on the next board)**  
 [Eva Coder Steffensen](https://facebook.com/eva.c.steffensen), [Anjitha S.g.](https://facebook.com/profile.php?id=1525002402), [Magnus Seines](https://facebook.com/magnus1808)
