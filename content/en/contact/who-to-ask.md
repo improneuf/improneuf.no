@@ -9,25 +9,25 @@ draft: false
 ## ENGLISH
 
 **English members workshop**  
-Nikki Michelle Soo
+[Nikki Michelle Soo](https://m.me/nikkimichellesoo)
 
 **English open workshop**  
-Rémi Rossi
+[Rémi Rossi](https://m.me/remi.rossi8)
 
 **The new English mixer team**  
-Peter Müller
+[Peter Müller](https://m.me/peter.and.muller)
 
 **The Impro Neuf Shortform pool and Jams**  
-Carlos Moreno
+[Carlos Moreno](https://m.me/carlosmorenorge)
 
 **Musical Impro Workshops**  
-India Anderson, Alejandro Saksida and Annika Harrestad
+[India Anderson](https://m.me/liebeindiana), [Alejandro Saksida](https://m.me/alejandrosaksida) and [Annika Harrestad](https://m.me/annika.haaaa)
 
 **Oslo Impro Festival**  
-Invi Brenna
+[Invi Brenna](https://m.me/invi.brenna)
 
 **Finance**  
-Miklós Altorjay
+[Miklós Altorjay](https://m.me/100006135948013)
 
 **Website**  
 Aleksander Andersen
@@ -35,22 +35,22 @@ Aleksander Andersen
 ## NORSK
 
 **Norsk medlemsworkshop**  
-Martine Amsrud Dietz
+[Martine Amsrud Dietz](https://m.me/martine.amsruddietz)
 
 **Norsk åpen workshop**  
-Thomas Haraldsen Evang og Paul Omar Lervåg
+[Thomas Haraldsen Evang](https://m.me/thomas.evang) og [Paul Omar Lervåg](https://m.me/Playerkameo)
 
 **Det nye norske mixer teamet**  
-Paul Omar Lervåg
+[Paul Omar Lervåg](https://m.me/Playerkameo)
 
 **Shows both English og Norske**  
-Eva Steffensen
+[Eva Steffensen](https://m.me/eva.c.steffensen)
 
 **Booking-meetings and rooms**  
-Eva Steffensen
+[Eva Steffensen](https://m.me/eva.c.steffensen)
 
 **PR**  
-Ruidi Collins
+[Ruidi Collins](https://m.me/ruidi.collins.1)
 
 **Election comitee (if you want to be on the next board)**  
-Eva Coder Steffensen, Anjitha S.g., Magnus Seines
+[Eva Coder Steffensen](https://m.me/eva.c.steffensen), [Anjitha S.g.](https://m.me/1525002402), [Magnus Seines](https://m.me/magnus1808)
