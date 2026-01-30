@@ -29,7 +29,7 @@ translationKey: "contact-who-to-ask"
 [Miklós Altorjay](https://facebook.com/profile.php?id=100006135948013)
 
 **Nettside**  
-Aleksander Andersen
+[Aleksander Andersen](https://www.facebook.com/aleksander.andersen.902)
 
 ## Norsk
 
