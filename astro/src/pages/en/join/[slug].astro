@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+    return [
+        {
+            params: { slug: "joinimprovteam" },
+            props: { title: "New Improv Team (Mixer)" },
+        },
+    ];
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <section class="section">
+        <div class="container">
+            <h1 class="page-title">{title}</h1>
+            <div class="content">
+                <p>
+                    This is a skeleton page for <strong>{title}</strong>. Want
+                    to join a team or start a new one? You're in the right
+                    place.
+                </p>
+
+                <div class="placeholder-block">
+                    [Information about joining teams and mixer sessions will be
+                    placed here]
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .page-title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+    .content {
+        max-width: 800px;
+        font-size: 1.2rem;
+    }
+    .placeholder-block {
+        margin-top: 3rem;
+        padding: 4rem;
+        background: var(--color-gray-light);
+        border: 2px dashed #ccc;
+        text-align: center;
+        color: #999;
+    }
+</style>

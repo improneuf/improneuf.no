@@ -5,7 +5,11 @@ export function getStaticPaths() {
     return [
         { params: { slug: "history" }, props: { title: "Our History" } },
         { params: { slug: "roles" }, props: { title: "Roles" } },
-        { params: { slug: "teams" }, props: { title: "Teams" } },
+        { params: { slug: "teams-overview" }, props: { title: "Teams" } },
+        {
+            params: { slug: "teachers-volunteers-overview" },
+            props: { title: "Teachers / volunteers" },
+        },
         { params: { slug: "where" }, props: { title: "Where" } },
         { params: { slug: "who" }, props: { title: "Who" } },
     ];
