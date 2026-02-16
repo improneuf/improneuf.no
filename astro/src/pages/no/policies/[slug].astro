@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+    return [
+        {
+            params: { slug: "codeofconduct" },
+            props: { title: "Etiske retningslinjer" },
+        },
+        {
+            params: { slug: "privacypolicy" },
+            props: { title: "Personvernserklæring" },
+        },
+        {
+            params: { slug: "termsofsale" },
+            props: { title: "Salgsvilkår" },
+        },
+    ];
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <section class="section">
+        <div class="container">
+            <h1 class="page-title">{title}</h1>
+            <div class="content">
+                <p>
+                    Dette er en skjelettside for <strong>{title}</strong>. Vi er
+                    forpliktet til å tilby et trygt og gjennomsiktig miljø for
+                    samfunnet vårt.
+                </p>
+
+                <div class="placeholder-block">
+                    [Offisiell {title}-tekst vil bli plassert her]
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .content {
+        max-width: 800px;
+        font-size: 1.2rem;
+    }
+    .placeholder-block {
+        margin-top: 3rem;
+        padding: 4rem;
+        background: var(--color-gray-light);
+        border: 2px dashed #ccc;
+        text-align: center;
+        color: #999;
+    }
+</style>

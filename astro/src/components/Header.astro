@@ -1,48 +1,76 @@
 ---
+const { pathname } = Astro.url;
+const isNo = pathname.startsWith("/no");
+const currentLang = isNo ? "no" : "en";
+
 const navLinks = [
-    { name: "Home", href: "/en/" },
+    { name: isNo ? "Hjem" : "Home", href: `/${currentLang}/` },
     {
-        name: "About us",
-        href: "/en/about/",
+        name: isNo ? "Om oss" : "About us",
+        href: `/${currentLang}/about/`,
         dropdown: [
-            { name: "History", href: "/en/about/history" },
             {
-                name: "Public records",
+                name: isNo ? "Historie" : "History",
+                href: `/${currentLang}/about/history`,
+            },
+            {
+                name: isNo ? "Offentlige dokumenter" : "Public records",
                 href: "https://drive.google.com/drive/folders/1r7ZnV6gpdHxkjha2z8BG5Nvs3qWahIPz",
                 external: true,
             },
-            { name: "Roles", href: "/en/about/roles" },
             {
-                name: "Teachers / volunteers",
-                href: "/en/about/teachers-volunteers-overview",
+                name: isNo ? "Roller" : "Roles",
+                href: `/${currentLang}/about/roles`,
             },
-            { name: "Teams", href: "/en/about/teams-overview" },
-            { name: "Where", href: "/en/about/where" },
-            { name: "Who", href: "/en/about/who" },
+            {
+                name: isNo ? "Lærere / frivillige" : "Teachers / volunteers",
+                href: `/${currentLang}/about/teachers-volunteers-overview`,
+            },
+            {
+                name: isNo ? "Grupper" : "Teams",
+                href: `/${currentLang}/about/teams-overview`,
+            },
+            {
+                name: isNo ? "Hvor" : "Where",
+                href: `/${currentLang}/about/where`,
+            },
+            { name: isNo ? "Hvem" : "Who", href: `/${currentLang}/about/who` },
         ],
     },
     {
-        name: "Contact us",
-        href: "/en/contact/",
+        name: isNo ? "Kontakt oss" : "Contact us",
+        href: `/${currentLang}/contact/`,
         dropdown: [
             {
-                name: "Anonymous feedback",
-                href: "/en/contact/anonymous-feedback",
+                name: isNo ? "Anonym tilbakemelding" : "Anonymous feedback",
+                href: `/${currentLang}/contact/anonymous-feedback`,
             },
             {
-                name: "Report/notification",
-                href: "/en/contact/report-notification",
+                name: isNo ? "Rapportering" : "Report/notification",
+                href: `/${currentLang}/contact/report-notification`,
             },
-            { name: "Contact the board", href: "/en/contact/contact-board" },
-            { name: "Who do I ask?", href: "/en/contact/who-to-ask" },
+            {
+                name: isNo ? "Kontakt styret" : "Contact the board",
+                href: `/${currentLang}/contact/contact-board`,
+            },
+            {
+                name: isNo ? "Hvem spør jeg?" : "Who do I ask?",
+                href: `/${currentLang}/contact/who-to-ask`,
+            },
         ],
     },
     {
-        name: "Events",
-        href: "/en/events/",
+        name: isNo ? "Hva skjer" : "Events",
+        href: `/${currentLang}/events/`,
         dropdown: [
-            { name: "Workshops", href: "/en/workshops" },
-            { name: "Shows", href: "/en/events/shows" },
+            {
+                name: isNo ? "Workshops" : "Workshops",
+                href: `/${currentLang}/workshops`,
+            },
+            {
+                name: isNo ? "Forestillinger" : "Shows",
+                href: `/${currentLang}/events/shows`,
+            },
             {
                 name: "Festival",
                 href: "https://www.facebook.com/osloimprofestival",
@@ -51,35 +79,52 @@ const navLinks = [
         ],
     },
     {
-        name: "Join us",
-        href: "/en/join/",
+        name: isNo ? "Bli med" : "Join us",
+        href: `/${currentLang}/join/`,
         dropdown: [
             {
-                name: "Membership",
+                name: isNo ? "Medlemskap" : "Membership",
                 href: "https://docs.google.com/forms/d/e/1FAIpQLSdV5bdctjwA--rFLd-crQBrDNQD0y7E_1qlRrGbPpddraonZw/viewform",
                 external: true,
             },
             {
-                name: "New improv team (mixer)",
-                href: "/en/join/joinimprovteam",
+                name: isNo
+                    ? "Nytt improvisasjonsteam (mixer)"
+                    : "New improv team (mixer)",
+                href: `/${currentLang}/join/joinimprovteam`,
             },
         ],
     },
     {
-        name: "Policies",
-        href: "/en/policies/",
+        name: isNo ? "Retningslinjer" : "Policies",
+        href: `/${currentLang}/policies/`,
         dropdown: [
-            { name: "Code of conduct", href: "/en/policies/codeofconduct" },
-            { name: "Privacy policy", href: "/en/policies/privacypolicy" },
-            { name: "Terms of sale", href: "/en/policies/termsofsale" },
+            {
+                name: isNo ? "Etiske retningslinjer" : "Code of conduct",
+                href: `/${currentLang}/policies/codeofconduct`,
+            },
+            {
+                name: isNo ? "Personvernserklæring" : "Privacy policy",
+                href: `/${currentLang}/policies/privacypolicy`,
+            },
+            {
+                name: isNo ? "Salgsvilkår" : "Terms of sale",
+                href: `/${currentLang}/policies/termsofsale`,
+            },
         ],
     },
     {
-        name: "Resources for volunteers",
-        href: "/en/resources/",
+        name: isNo ? "Ressurser for frivillige" : "Resources for volunteers",
+        href: `/${currentLang}/resources/`,
         dropdown: [
-            { name: "Show manual", href: "/en/resources/showhowtodo" },
-            { name: "Workshop manual", href: "/en/resources/workshophowtodo" },
+            {
+                name: isNo ? "Show-manual" : "Show manual",
+                href: `/${currentLang}/resources/showhowtodo`,
+            },
+            {
+                name: isNo ? "Workshop-manual" : "Workshop manual",
+                href: `/${currentLang}/resources/workshophowtodo`,
+            },
         ],
     },
     {
@@ -99,12 +144,18 @@ const navLinks = [
         ],
     },
 ];
+
+const langSwitcherText = isNo ? "English" : "Norsk";
+const langSwitcherHref = isNo
+    ? pathname.replace("/no", "/en")
+    : pathname.replace("/en", "/no");
+const targetLang = isNo ? "en" : "no";
 ---
 
 <header class="header">
     <div class="container nav-container">
         <div class="logo">
-            <a href="/en/">IMPRO NEUF</a>
+            <a href={`/${currentLang}/`}>IMPRO NEUF</a>
         </div>
         <nav class="nav">
             <ul class="nav-list">
@@ -152,12 +203,30 @@ const navLinks = [
                     ))
                 }
                 <li class="nav-item">
-                    <a href="/no/" class="nav-link lang-switcher">Norsk</a>
+                    <a
+                        href={langSwitcherHref}
+                        class="nav-link lang-switcher"
+                        data-lang={targetLang}
+                    >
+                        {langSwitcherText}
+                    </a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
+
+<script>
+    const switcher = document.querySelector(".lang-switcher");
+    if (switcher) {
+        switcher.addEventListener("click", (e) => {
+            const lang = switcher.getAttribute("data-lang");
+            if (lang) {
+                localStorage.setItem("preferredLanguage", lang);
+            }
+        });
+    }
+</script>
 
 <style>
     .header {

@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const contactLinks = [
+    { slug: "anonymous-feedback", title: "Anonym tilbakemelding" },
+    { slug: "contact-board", title: "Kontakt styret" },
+    { slug: "report-notification", title: "Rapporter sikkerhetsproblemer" },
+    { slug: "who-to-ask", title: "FAQ / Hvem spør jeg?" },
+];
+---
+
+<BaseLayout title="Kontakt oss">
+    <section class="section">
+        <div class="container">
+            <h1 class="page-title">Kontakt oss</h1>
+            <p class="intro">
+                Vi vil gjerne høre fra deg. Velg det mest relevante alternativet
+                nedenfor.
+            </p>
+
+            <div class="tile-grid">
+                {
+                    contactLinks.map((link) => (
+                        <div class="tile">
+                            <h3>{link.title}</h3>
+                            <p>
+                                Skjelett for kontaktskjema eller info for{" "}
+                                {link.title}.
+                            </p>
+                            <a
+                                href={`/no/contact/${link.slug}`}
+                                class="btn btn-black"
+                            >
+                                Gå til side
+                            </a>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .intro {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 3rem;
+    }
+    .tile-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    .tile {
+        background: var(--color-gray-light);
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    .tile h3 {
+        margin-bottom: 1rem;
+    }
+    .btn {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+</style>

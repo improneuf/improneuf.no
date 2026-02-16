@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+    return [
+        {
+            params: { slug: "anonymous-feedback" },
+            props: { title: "Anonym tilbakemelding" },
+        },
+        {
+            params: { slug: "contact-board" },
+            props: { title: "Kontakt styret" },
+        },
+        {
+            params: { slug: "report-notification" },
+            props: { title: "Rapport og varsling" },
+        },
+        {
+            params: { slug: "who-to-ask" },
+            props: { title: "Hvem spør jeg?" },
+        },
+    ];
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <section class="section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/no/contact/">Kontakt oss</a> / <span>{title}</span>
+            </nav>
+            <h1 class="page-title">{title}</h1>
+            <div class="content">
+                <p>
+                    Dette er en skjelettside for <strong>{title}</strong>. Vi
+                    jobber med å tilby de riktige kanalene for kommunikasjon og
+                    støtte.
+                </p>
+
+                <div class="placeholder-block">
+                    [Innhold for {slug} vil bli plassert her]
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .breadcrumb {
+        margin-bottom: 1rem;
+        color: #666;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .content {
+        max-width: 800px;
+        font-size: 1.2rem;
+    }
+    .placeholder-block {
+        margin-top: 3rem;
+        padding: 4rem;
+        background: var(--color-gray-light);
+        border: 2px dashed #ccc;
+        text-align: center;
+        color: #999;
+    }
+</style>

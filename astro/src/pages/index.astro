@@ -1,5 +1,10 @@
 <script is:inline>
     (function () {
+        const storedLang = localStorage.getItem("preferredLanguage");
+        if (storedLang) {
+            window.location.pathname = `/${storedLang}/`;
+            return;
+        }
         const userLang = navigator.language || navigator.userLanguage;
         if (
             userLang.startsWith("no") ||
