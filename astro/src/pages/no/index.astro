@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Hjem">
+    <section class="section">
+        <div class="container">
+            <h1 class="page-title">Velkommen til Impro Neuf</h1>
+            <p class="lead">Oslos største improv-miljø!</p>
+
+            <div class="placeholder-block">
+                [Innhold på norsk kommer snart. Inntil videre kan du se den
+                engelske versjonen.]
+                <br /><br />
+                <a href="/en/" class="btn">Gå til engelsk side</a>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .page-title {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    .lead {
+        font-size: 1.5rem;
+        color: var(--color-gray-dark);
+        margin-bottom: 3rem;
+    }
+    .placeholder-block {
+        padding: 4rem;
+        background: var(--color-gray-light);
+        border-radius: 8px;
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+</style>

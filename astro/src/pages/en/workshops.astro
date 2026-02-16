@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Workshops">
+    <section class="section">
+        <div class="container">
+            <h1 class="page-title">Improv Workshops</h1>
+            <div class="content">
+                <p>
+                    Improv is for everyone! Join our weekly workshops and
+                    discover the joy of spontaneous theater. No auditions, no
+                    stress, just fun.
+                </p>
+
+                <div class="placeholder-block">
+                    [Upcoming workshops schedule and registration details will
+                    be listed here]
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .page-title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+    .content {
+        max-width: 800px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    .placeholder-block {
+        margin-top: 3rem;
+        padding: 5rem;
+        background: var(--color-gray-light);
+        border: 2px dashed #ccc;
+        text-align: center;
+        color: #999;
+    }
+</style>

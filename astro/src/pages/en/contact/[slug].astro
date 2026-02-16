@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+    return [
+        {
+            params: { slug: "anonymous-feedback" },
+            props: { title: "Anonymous Feedback" },
+        },
+        {
+            params: { slug: "contact-board" },
+            props: { title: "Contact the Board" },
+        },
+        {
+            params: { slug: "report-notification" },
+            props: { title: "Report and Notification" },
+        },
+        {
+            params: { slug: "who-to-ask" },
+            props: { title: "Who to Ask" },
+        },
+    ];
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <section class="section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/en/contact/">Contact Us</a> / <span>{title}</span>
+            </nav>
+            <h1 class="page-title">{title}</h1>
+            <div class="content">
+                <p>
+                    This is a skeleton page for <strong>{title}</strong>. We are
+                    working on providing the right channels for communication
+                    and support.
+                </p>
+
+                <div class="placeholder-block">
+                    [Content for {slug} will be placed here]
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .breadcrumb {
+        margin-bottom: 1rem;
+        color: #666;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .content {
+        max-width: 800px;
+        font-size: 1.2rem;
+    }
+    .placeholder-block {
+        margin-top: 3rem;
+        padding: 4rem;
+        background: var(--color-gray-light);
+        border: 2px dashed #ccc;
+        text-align: center;
+        color: #999;
+    }
+</style>
