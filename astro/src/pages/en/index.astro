@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
+---
+
+<BaseLayout title="Home">
+    <Hero />
+
+    <section id="workshops" class="section">
+        <div class="container">
+            <div class="grid">
+                <FeatureCard
+                    title="Weekly Workshops"
+                    description="Join our open workshops every week. No experience needed! Learn the basics of improv in a friendly and supportive environment."
+                    link="/en/workshops"
+                    linkText="Find a workshop"
+                />
+                <FeatureCard
+                    title="Upcoming Shows"
+                    description="Experience the magic of spontaneous theater. From experimental formats to high-energy comedy, we have something for everyone."
+                    link="/en/#shows"
+                    linkText="See the schedule"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="shows" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Latest Updates</h2>
+            <p>Stay tuned for our upcoming season of shows and workshops!</p>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .alt-bg {
+        background-color: var(--color-gray-light);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

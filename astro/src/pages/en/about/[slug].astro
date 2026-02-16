@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+    return [
+        { params: { slug: "history" }, props: { title: "Our History" } },
+        { params: { slug: "roles" }, props: { title: "Roles" } },
+        { params: { slug: "teams" }, props: { title: "Teams" } },
+        { params: { slug: "where" }, props: { title: "Where" } },
+        { params: { slug: "who" }, props: { title: "Who" } },
+    ];
+}
+
+const { slug } = Astro.params;
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <section class="section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/en/about/">About</a> / <span>{title}</span>
+            </nav>
+            <h1 class="page-title">{title}</h1>
+            <div class="content">
+                <p>
+                    This is a skeleton page for <strong>{title}</strong>. As we
+                    migrate the content, we will fill this section with the rich
+                    history and details of our community.
+                </p>
+
+                <div class="placeholder-block">
+                    [Content for {slug} will be placed here]
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .breadcrumb {
+        margin-bottom: 1rem;
+        color: #666;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .content {
+        max-width: 800px;
+        font-size: 1.2rem;
+    }
+    .placeholder-block {
+        margin-top: 3rem;
+        padding: 4rem;
+        background: var(--color-gray-light);
+        border: 2px dashed #ccc;
+        text-align: center;
+        color: #999;
+    }
+</style>

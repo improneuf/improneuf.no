@@ -1,0 +1,89 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-section">
+            <h3>IMPRO NEUF</h3>
+            <p>
+                The International Improv Community of Oslo. We build communities
+                through improvisation.
+            </p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/en/about/">About Us</a></li>
+                <li><a href="/en/contact/">Contact</a></li>
+                <li><a href="/en/privacy/">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Stay Spontaneous</h3>
+            <p>Join our newsletter or follow us on social media.</p>
+            <div class="social-links">
+                <!-- Add social icons placeholder -->
+                <span>FB</span>
+                <span>IG</span>
+                <span>YT</span>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>&copy; {year} Impro Neuf. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background: var(--color-black);
+        color: var(--color-white);
+        padding: 4rem 0 2rem;
+        margin-top: 4rem;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .footer-section p {
+        color: #ccc;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #333;
+        padding-top: 2rem;
+        text-align: center;
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
