@@ -1,0 +1,14 @@
+<script is:inline>
+    (function () {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (
+            userLang.startsWith("no") ||
+            userLang.startsWith("nb") ||
+            userLang.startsWith("nn")
+        ) {
+            window.location.pathname = "/no/";
+        } else {
+            window.location.pathname = "/en/";
+        }
+    })();
+</script>
