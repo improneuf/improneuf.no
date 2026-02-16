@@ -16,4 +16,4 @@ Thumbs.db
 *.log
 tmp/
 
-node_modules/*
+astro/node_modules/*
