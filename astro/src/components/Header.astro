@@ -1,27 +1,101 @@
 ---
 const navLinks = [
     { name: "Home", href: "/en/" },
-    { name: "Shows", href: "/en/#shows" },
-    { name: "Workshops", href: "/en/#workshops" },
     {
-        name: "About",
+        name: "About us",
         href: "/en/about/",
         dropdown: [
             { name: "History", href: "/en/about/history" },
+            {
+                name: "Public records",
+                href: "https://drive.google.com/drive/folders/1r7ZnV6gpdHxkjha2z8BG5Nvs3qWahIPz",
+                external: true,
+            },
             { name: "Roles", href: "/en/about/roles" },
-            { name: "Teams", href: "/en/about/teams" },
+            {
+                name: "Teachers / volunteers",
+                href: "/en/about/teachers-volunteers-overview",
+            },
+            { name: "Teams", href: "/en/about/teams-overview" },
             { name: "Where", href: "/en/about/where" },
             { name: "Who", href: "/en/about/who" },
         ],
     },
     {
-        name: "Contact Us",
+        name: "Contact us",
         href: "/en/contact/",
         dropdown: [
-            { name: "Feedback", href: "/en/contact/anonymous-feedback" },
-            { name: "Board", href: "/en/contact/contact-board" },
-            { name: "Report", href: "/en/contact/report-notification" },
-            { name: "FAQ", href: "/en/contact/who-to-ask" },
+            {
+                name: "Anonymous feedback",
+                href: "/en/contact/anonymous-feedback",
+            },
+            {
+                name: "Report/notification",
+                href: "/en/contact/report-notification",
+            },
+            { name: "Contact the board", href: "/en/contact/contact-board" },
+            { name: "Who do I ask?", href: "/en/contact/who-to-ask" },
+        ],
+    },
+    {
+        name: "Events",
+        href: "/en/events/",
+        dropdown: [
+            { name: "Workshops", href: "/en/workshops" },
+            { name: "Shows", href: "/en/events/shows" },
+            {
+                name: "Festival",
+                href: "https://www.facebook.com/osloimprofestival",
+                external: true,
+            },
+        ],
+    },
+    {
+        name: "Join us",
+        href: "/en/join/",
+        dropdown: [
+            {
+                name: "Membership",
+                href: "https://docs.google.com/forms/d/e/1FAIpQLSdV5bdctjwA--rFLd-crQBrDNQD0y7E_1qlRrGbPpddraonZw/viewform",
+                external: true,
+            },
+            {
+                name: "New improv team (mixer)",
+                href: "/en/join/joinimprovteam",
+            },
+        ],
+    },
+    {
+        name: "Policies",
+        href: "/en/policies/",
+        dropdown: [
+            { name: "Code of conduct", href: "/en/policies/codeofconduct" },
+            { name: "Privacy policy", href: "/en/policies/privacypolicy" },
+            { name: "Terms of sale", href: "/en/policies/termsofsale" },
+        ],
+    },
+    {
+        name: "Resources for volunteers",
+        href: "/en/resources/",
+        dropdown: [
+            { name: "Show manual", href: "/en/resources/showhowtodo" },
+            { name: "Workshop manual", href: "/en/resources/workshophowtodo" },
+        ],
+    },
+    {
+        name: "Social media",
+        href: "#",
+        dropdown: [
+            {
+                name: "Facebook",
+                href: "https://www.facebook.com/groups/improneufcommunity",
+                external: true,
+            },
+            {
+                name: "Instagram",
+                href: "https://www.instagram.com/improneuflovesyou/",
+                external: true,
+            },
         ],
     },
 ];
@@ -37,7 +111,16 @@ const navLinks = [
                 {
                     navLinks.map((link) => (
                         <li class="nav-item">
-                            <a href={link.href} class="nav-link">
+                            <a
+                                href={link.href}
+                                class="nav-link"
+                                {...(link.external
+                                    ? {
+                                          target: "_blank",
+                                          rel: "noopener noreferrer",
+                                      }
+                                    : {})}
+                            >
                                 {link.name}
                                 {link.dropdown && <span class="arrow">▼</span>}
                             </a>
@@ -45,7 +128,22 @@ const navLinks = [
                                 <ul class="dropdown">
                                     {link.dropdown.map((sub) => (
                                         <li>
-                                            <a href={sub.href}>{sub.name}</a>
+                                            <a
+                                                href={sub.href}
+                                                {...(sub.external
+                                                    ? {
+                                                          target: "_blank",
+                                                          rel: "noopener noreferrer",
+                                                      }
+                                                    : {})}
+                                            >
+                                                {sub.name}
+                                                {sub.external && (
+                                                    <span class="external-icon">
+                                                        ↗
+                                                    </span>
+                                                )}
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
